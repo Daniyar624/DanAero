@@ -1,13 +1,13 @@
-package Methods;
-import Plane.CargoPlane;
+package calculators;
+import plane.CargoPlane;
 
 public class TotalCarryingCapacityCalculator {
-    public static void CarryingCapacityCalculate (CargoPlane ... args){
+    public static int carryingCapacityCalculate (CargoPlane ... args){
         int totalCarryingCapacity = 0;
         for (CargoPlane i : args){
             totalCarryingCapacity = totalCarryingCapacity + i.getCarryingCapacity();
         }
-        System.out.println("Total carrying capacity: " + totalCarryingCapacity + " tons.");
+        return totalCarryingCapacity;
     }
 
 }

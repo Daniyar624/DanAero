@@ -1,13 +1,13 @@
-package Methods;
+package calculators;
 
-import Plane.PassengerPlane;
+import plane.PassengerPlane;
 
 public class TotalCapacityCalculator {
-    public static void CapacityCalculate (PassengerPlane ... args){
+    public static int capacityCalculate (PassengerPlane ... args){
         int totalCapacity = 0;
         for (PassengerPlane i : args) {
              totalCapacity = totalCapacity + i.getCapacity();
         }
-        System.out.println("Total capacity: " + totalCapacity + " seats.");
+       return totalCapacity;
     }
 }
